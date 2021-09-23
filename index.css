@@ -1,0 +1,201 @@
+@font-face {
+    font-family: myFont;
+    src: local('./img/caton.ttf'), url("./img/caton.ttf");
+}
+@font-face {
+    font-family: myFont1;
+    src: local('./img/1.ttf'), url("./img/1.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    font-family: myFont;
+}
+
+body {
+    /* background-image: linear-gradient(to bottom left, rgb(68, 3, 3) , rgba(248, 4, 4, 0.876)); */
+
+    /* background-color: antiquewhite; */
+     background-image: url(./img/QQ.jpg);
+    background-size: cover; 
+    transition: all 2s;
+    
+}
+
+canvas {
+    display: none;
+    margin: 0 auto;
+    margin-top: 5%;
+    /* background-color: blue; */
+    border: 0px solid rgba(255, 0, 0, 0);
+    border-radius: 10px;
+    animation: my .3s forwards;
+    -webkit-animation: my .3s forwards;
+    transition: all .5s;
+
+}
+@keyframes my{
+    0%{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    100%{
+   opacity: 1;
+        width: 700px;
+        height: 800px;
+    }
+    
+}
+.divs,.divs2,.divs3{
+    width: 500px;height: 500px;
+    border: 0 solid red;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;   
+    top:250px;
+    padding-top: 100px;
+    background-color: rgba(168, 26, 26, 0.541);
+    border-radius: 6%;
+    box-shadow: 4px -4px 5px rgba(119, 3, 3, 0.678);
+
+
+}
+.divs1{
+    border: 0 solid red;
+    position: absolute;
+    background-color: rgba(168, 26, 26, 0.541);
+    width: 250px;height: 275px;
+    top:250px;
+    border-radius: 5%;
+    -webkit-animation: myfirst 1s forwards;
+    animation: myfirst 1s forwards;
+    -webkit-animation: myfirst 1s forwards;
+    transition: all .5s;
+}
+
+@keyframes myfirst{
+    0%{
+        width: 500px;height: 500px;
+    }
+    100%{
+    left:70%; 
+    }
+}
+.divs div,.divs1 div{
+    width: 200px;height: 80px;
+    border: 1px solid;
+    margin:  30px auto;
+    border-radius: 16%;
+    background-image: linear-gradient(to bottom left, rgb(68, 3, 3) , rgba(248, 4, 4, 0.876));
+    box-shadow: -2px -2px 5px rgba(119, 3, 3, 0.678);
+    font-family: myFont;
+    font-size: 20px;
+    color: chocolate;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 80px;
+}
+.divs1 div{
+    padding-top: 10px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;  
+}
+.getBigDiv{
+    padding-top: 10px;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;  
+}
+.divs div:hover,.divs1 div:hover{
+    background-image: linear-gradient(to bottom left, rgb(195, 12, 12) , rgba(245, 0, 0, 0.876));
+    cursor: pointer;
+}
+.divs2{
+    width: 800px;height: 500px;
+    left: 50%;
+    margin-left: -400px;
+    top:250px;
+    padding: 0 20px;
+    /* padding-top: 100px; */
+    border-radius: 3%;
+    box-shadow: 4px -4px 5px rgba(119, 3, 3, 0.678);
+    transition: all .5s;
+    font-family: myFont;
+    font-size: 20px;
+    color: rgb(56, 47, 45);
+    font-weight: bolder;
+    letter-spacing: .2em;
+    line-height: 1.5em;
+}
+.divs3{
+    width: 1200px;height: 600px;
+    left: 50%;
+    margin-left: -600px;
+    top:200px;
+    padding: 0 20px;
+    padding-top: 100px;
+    border-radius: 15px;
+    background-color: rgba(255, 0, 0, 0);
+    /* background-image: linear-gradient(to bottom right,rgba(241, 42, 248, 0.171),rgba(15, 2, 248, 0.377) ); */
+    box-shadow: 4px 0px 8px  rgba(0, 89, 255, 0.226),
+    0px 4px 8px  rgba(0, 89, 255, 0.226),
+    -4px 0px 5px   rgba(246, 0, 164, 0.26),
+    0px -4px 5px  rgba(246, 0, 164, 0.26);
+    
+    transition: all .5s;
+    font-family: myFont1;
+    font-size: 20px;
+    color: rgb(189, 183, 181);
+    font-weight: bolder;
+    letter-spacing: .2em;
+    line-height: 2.5em;
+}
+button{
+    margin: 50px auto;
+    margin-left: 85%;
+    font-family: myFont;
+    color: rgb(127, 161, 255);
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    /* box-shadow: 0 0 0 rgba(255, 0, 0, 0); */
+    border: 1 solid rgb(83, 1, 1);
+    border-radius: 20px;
+    background-color: rgba(168, 26, 26, 0.541);
+    cursor: pointer;
+}
+.over{
+    width: 400px;
+    height: 500px;
+    background-color: rgba(168, 26, 26, 0.541);
+    position: absolute;
+    left:70%;
+    /* margin-left: -200px; */
+    top:0;
+    margin-top: 10%;
+}
+.over h2,.over p{
+    margin:30px auto;
+    /* margin-left:50%; */
+    color: wheat;
+    text-align: center;
+}
+.over p{
+    font-size: 20px;
+}
+
+.againChangeButton{
+    position: absolute;
+  display: none;
+  color: wheat;
+margin-left: 78%;
+top: 500px;
+    z-index: 1;
+}
